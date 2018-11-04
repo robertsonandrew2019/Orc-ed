@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.printf("The following intelligence values yield the desired success probablity.\n\n");
-        for (int intelligence = 10; intelligence <= 31; intelligence++) {
+        for (int intelligence = 10; intelligence <= 30; intelligence++) {
             if (simulator(intelligence) >= 600000 && simulator(intelligence) <= 700000){
                 System.out.printf("Intelligence: %d\n", intelligence);
             }
