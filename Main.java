@@ -9,9 +9,8 @@ public class Main {
 
         int intelligenceRand = 10; //preset for probability purposes
 
-        //System.out.print("Desired Intelligence (enter desired difference between intelligence and 11): ");
+        //System.out.print("Desired Intelligence (enter desired difference between intelligence and 11 i.e. for 15, enter 4): ");
         //int intelligenceRand = sc.nextInt();
-
 
         int utility = 17 - intelligenceRand;
         int strengthRand = rand.nextInt(utility);
