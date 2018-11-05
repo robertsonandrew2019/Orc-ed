@@ -2,7 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-
     public static Random rand = new Random();
 
     public static void main(String[] args) {
@@ -18,12 +17,10 @@ public class Main {
         int successfulRuns = 0;
         for (int i = 0; i < 1000000; i++) { //1,000,000 simulations per intelligence value
             double orcHealth = 1000;
-
             for (int j = 0; j < 10; j++) { //10 randomized attacks per simulation
                 double damage = intelligence * 5 * (rand.nextDouble() + 0.5);
                 orcHealth -= damage;
             }
-
             if (orcHealth <= 0) {
                 successfulRuns++;
             }
@@ -31,9 +28,6 @@ public class Main {
         return successfulRuns;
     }
 }
-
-
-
 /*Scanner sc = new Scanner(System.in);
 
         int intelligence = 10; //preset for probability purposes
